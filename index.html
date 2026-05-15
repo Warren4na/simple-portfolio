@@ -8,17 +8,22 @@
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sacramento&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Hero -->
     <header class="hero">
+        <div class="hero-glow hero-glow--1"></div>
+        <div class="hero-glow hero-glow--2"></div>
+        <div class="hero-glow hero-glow--3"></div>
         <div class="hero-inner">
-            <img class="avatar" src="images/warren.png" alt="Warren Fornah Jr.">
+            <div class="avatar-wrap">
+                <img class="avatar" src="images/warren.png" alt="Warren Fornah Jr.">
+            </div>
             <h1>Warren Fornah Jr.</h1>
             <p class="hero-sub">Cybersecurity &amp; IT &nbsp;·&nbsp; Web Development &nbsp;·&nbsp; E-Learning</p>
-            <p class="hero-desc">BSc IT graduate &amp; Cybersecurity student at Seneca Polytechnic (GPA 4.0, President's Honour List). I build things for the web and help secure them.</p>
+            <p class="hero-desc">BSc IT graduate &amp; Cybersecurity student at Seneca Polytechnic — GPA 4.0, President's Honour List. I build things for the web and help secure them.</p>
             <div class="hero-tags">
                 <span>HTML / CSS</span>
                 <span>JavaScript</span>
@@ -28,73 +33,101 @@
                 <span>Machine Learning</span>
                 <span>Canvas LMS</span>
             </div>
+            <a class="hero-cta" href="#projects">View My Work</a>
         </div>
     </header>
 
-    <!-- Projects -->
     <main>
-        <section class="section">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-
-                <div class="card featured">
-                    <div class="card-label">Cybersecurity Program · Seneca Polytechnic</div>
-                    <img class="card-banner" src="images/network-traffic.svg" alt="Network traffic classification chart">
-                    <h3>Network Traffic Classification</h3>
-                    <p>Completed as part of the <strong>Cybersecurity &amp; Threat Management</strong> program at Seneca Polytechnic. Built a machine learning pipeline to detect DDoS attacks on 225,745 real network flows (CICIDS2017). Random Forest achieved <strong>99.99% accuracy</strong> with zero false positives.</p>
-                    <div class="card-tags">
-                        <span>Machine Learning</span>
-                        <span>DDoS Detection</span>
-                        <span>Altair AI Studio</span>
-                        <span>Data Analytics</span>
-                        <span>Random Forest</span>
-                    </div>
-                    <p class="card-meta">CYT180 · April 2026</p>
+        <!-- Projects -->
+        <section class="section" id="projects">
+            <div class="section-inner">
+                <div class="section-heading">
+                    <span class="section-eyebrow">Portfolio</span>
+                    <h2>Projects</h2>
                 </div>
 
-                <div class="card">
-                    <div class="card-label">Web Development</div>
-                    <img class="card-logo" src="images/jaw-logo.png" alt="Joy at Work">
-                    <h3>Joy-at-Work Website</h3>
-                    <p>Designed and developed the website for Joy-at-Work Center, a global training and coaching organization.</p>
-                    <div class="card-tags">
-                        <span>WordPress</span>
-                        <span>HTML/CSS</span>
-                    </div>
-                    <a class="card-link" href="https://joyatwork.net/" target="_blank">Visit Site &rarr;</a>
-                </div>
+                <div class="projects-grid">
 
-                <div class="card">
-                    <div class="card-label">Web Development</div>
-                    <img class="card-banner card-banner--light" src="images/empowerment-institute.svg" alt="The Empowerment Institute for Michigan">
-                    <h3>The Empowerment Institute for Michigan</h3>
-                    <p>Contributed to the design and development of the website for a leadership training and organizational development organization serving communities across Michigan. Built with WordPress and Elementor, featuring multi-page content architecture, an integrated Online Campus, team directory, media hub (blog, podcast, newsletter), and e-brochures. Ongoing role includes website maintenance, user account management, and technical support for the Online Campus.</p>
-                    <div class="card-tags">
-                        <span>WordPress</span>
-                        <span>Elementor</span>
-                        <span>HTML/CSS</span>
-                        <span>LMS / Online Campus</span>
+                    <!-- Featured -->
+                    <div class="card card--featured">
+                        <div class="card-image-wrap">
+                            <img class="card-banner" src="images/network-traffic.svg" alt="Network traffic classification chart">
+                            <span class="card-badge">Cybersecurity Program &nbsp;·&nbsp; Seneca Polytechnic</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Network Traffic Classification</h3>
+                            <p>Completed as part of the <strong>Cybersecurity &amp; Threat Management</strong> program at Seneca Polytechnic (CYT180, April 2026). Built a machine learning pipeline to detect DDoS attacks on 225,745 real network flows from the CICIDS2017 dataset. Compared Logistic Regression vs. Random Forest — Random Forest achieved <strong>99.99% accuracy</strong> with zero false positives across 21,751 test samples.</p>
+                            <div class="card-tags">
+                                <span>Machine Learning</span>
+                                <span>DDoS Detection</span>
+                                <span>Altair AI Studio</span>
+                                <span>Random Forest</span>
+                                <span>Data Analytics</span>
+                            </div>
+                        </div>
                     </div>
-                    <a class="card-link" href="https://empoweringthroughlove.org/" target="_blank">Visit Site &rarr;</a>
-                </div>
 
+                    <!-- Regular cards -->
+                    <div class="cards-row">
+
+                        <div class="card">
+                            <div class="card-image-wrap">
+                                <img class="card-banner card-banner--light" src="images/empowerment-institute.svg" alt="The Empowerment Institute for Michigan">
+                                <span class="card-badge card-badge--teal">Web Development</span>
+                            </div>
+                            <div class="card-body">
+                                <h3>The Empowerment Institute for Michigan</h3>
+                                <p>Contributed to the design and development of the website for a leadership training and organizational development organization serving communities across Michigan. Built with WordPress and Elementor, featuring multi-page content, an integrated Online Campus, team directory, media hub, and e-brochures. Ongoing maintenance and technical support role.</p>
+                                <div class="card-tags">
+                                    <span>WordPress</span>
+                                    <span>Elementor</span>
+                                    <span>LMS / Online Campus</span>
+                                </div>
+                                <a class="card-btn" href="https://empoweringthroughlove.org/" target="_blank">Visit Site <span>&rarr;</span></a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-image-wrap card-image-wrap--jaw">
+                                <img class="card-logo-hero" src="images/jaw-logo.png" alt="Joy at Work">
+                                <span class="card-badge card-badge--teal">Web Development</span>
+                            </div>
+                            <div class="card-body">
+                                <h3>Joy-at-Work Website</h3>
+                                <p>Designed and developed the website for Joy-at-Work Center, a global training and coaching organization helping teams and leaders find purpose and joy in the workplace.</p>
+                                <div class="card-tags">
+                                    <span>WordPress</span>
+                                    <span>HTML / CSS</span>
+                                </div>
+                                <a class="card-btn" href="https://joyatwork.net/" target="_blank">Visit Site <span>&rarr;</span></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Contact -->
-        <section class="section contact">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-desc">Open to co-op, internship &amp; full-time opportunities. Always happy to connect.</p>
-            <a class="btn" href="mailto:wjrfornah@gmail.com">Say Hello</a>
+        <section class="contact-section">
+            <div class="contact-inner">
+                <p class="contact-eyebrow">What's next?</p>
+                <h2>Let's Work Together</h2>
+                <p>Open to co-op, internship &amp; full-time opportunities. Whether it's cybersecurity, web development, or IT systems — I'd love to connect.</p>
+                <a class="contact-btn" href="mailto:wjrfornah@gmail.com">Say Hello &rarr;</a>
+            </div>
         </section>
     </main>
 
     <footer>
-        <div class="footer-links">
-            <a href="https://www.linkedin.com/in/warren-jr-fornah-875b461b9/" target="_blank">LinkedIn</a>
-            <a href="https://twitter.com/WarrenJrFornah" target="_blank">Twitter</a>
+        <div class="footer-inner">
+            <p class="footer-name">Warren Fornah Jr.</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/warren-jr-fornah-875b461b9/" target="_blank">LinkedIn</a>
+                <a href="https://twitter.com/WarrenJrFornah" target="_blank">Twitter</a>
+            </div>
+            <p class="copyright">© 2026 Warren Fornah Jr. All rights reserved.</p>
         </div>
-        <p class="copyright">© Warren Fornah Jr. 2026</p>
     </footer>
 
 </body>
