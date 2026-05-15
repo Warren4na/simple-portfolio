@@ -1,65 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 200" fill="none">
-  <!-- Background -->
   <rect width="560" height="200" rx="12" fill="#f0fbfb"/>
-
-  <!-- Left: Text block -->
-  <!-- "The Empowerment Institute for" -->
   <text x="32" y="52" font-family="Georgia, serif" font-size="22" fill="#3cbfbf" font-weight="400">The Empowerment</text>
   <text x="32" y="80" font-family="Georgia, serif" font-size="22" fill="#3cbfbf" font-weight="400">Institute for</text>
-
-  <!-- "MICHIGAN" bold navy -->
   <text x="32" y="116" font-family="Arial, sans-serif" font-size="30" fill="#1a2d6e" font-weight="900" letter-spacing="3">MICHIGAN</text>
-
-  <!-- Four teal squares -->
   <rect x="32"  y="128" width="34" height="22" rx="2" fill="#3cbfbf"/>
   <rect x="72"  y="128" width="34" height="22" rx="2" fill="#3cbfbf"/>
   <rect x="112" y="128" width="34" height="22" rx="2" fill="#3cbfbf"/>
   <rect x="152" y="128" width="34" height="22" rx="2" fill="#3cbfbf"/>
-
-  <!-- Tagline italic navy -->
   <text x="32" y="172" font-family="Georgia, serif" font-size="14" fill="#1a2d6e" font-style="italic">Transforming leaders and</text>
   <text x="32" y="190" font-family="Georgia, serif" font-size="14" fill="#1a2d6e" font-style="italic">organizations through love...</text>
-
-  <!-- Right: Circular frame with figures -->
-  <!-- Circle background -->
   <circle cx="420" cy="102" r="88" fill="#d8f0f0" opacity="0.6"/>
   <circle cx="420" cy="102" r="88" fill="none" stroke="#3cbfbf" stroke-width="1.5"/>
-
-  <!-- Building silhouette inside circle (simplified) -->
   <rect x="340" y="90" width="160" height="90" rx="0" fill="#e8f5f5" clip-path="url(#circleClip)"/>
-  <!-- Vertical lines for building -->
   <line x1="360" y1="90" x2="360" y2="185" stroke="#c0dede" stroke-width="1" opacity="0.6"/>
   <line x1="385" y1="90" x2="385" y2="185" stroke="#c0dede" stroke-width="1" opacity="0.6"/>
   <line x1="420" y1="90" x2="420" y2="185" stroke="#c0dede" stroke-width="1" opacity="0.6"/>
   <line x1="455" y1="90" x2="455" y2="185" stroke="#c0dede" stroke-width="1" opacity="0.6"/>
   <line x1="480" y1="90" x2="480" y2="185" stroke="#c0dede" stroke-width="1" opacity="0.6"/>
-
-  <!-- Left figure (blue, larger) -->
-  <!-- Head -->
   <circle cx="395" cy="52" r="13" fill="#1a2d6e"/>
-  <!-- Body / arms -->
   <path d="M382,65 Q370,50 362,42" stroke="#1a2d6e" stroke-width="7" stroke-linecap="round" fill="none"/>
   <path d="M408,65 Q418,48 428,38" stroke="#1a2d6e" stroke-width="7" stroke-linecap="round" fill="none"/>
-  <!-- Legs -->
   <path d="M388,95 Q378,120 372,140" stroke="#1a2d6e" stroke-width="7" stroke-linecap="round" fill="none"/>
   <path d="M402,95 Q410,118 416,140" stroke="#1a2d6e" stroke-width="7" stroke-linecap="round" fill="none"/>
-  <!-- Torso -->
   <path d="M382,65 Q395,78 408,65 L408,95 Q395,105 382,95 Z" fill="#1a2d6e"/>
-
-  <!-- Heart shape (top of right figure's hand) -->
   <path d="M427,36 C427,32 422,28 418,32 C414,28 409,32 409,36 C409,40 418,48 418,48 C418,48 427,40 427,36 Z" fill="#3cbfbf"/>
-
-  <!-- Right figure (teal, smaller/raised) -->
-  <!-- Head -->
   <circle cx="445" cy="60" r="11" fill="#3cbfbf"/>
-  <!-- Body -->
   <path d="M434,72 Q424,58 416,50" stroke="#3cbfbf" stroke-width="6" stroke-linecap="round" fill="none"/>
   <path d="M456,72 Q463,56 468,46" stroke="#3cbfbf" stroke-width="6" stroke-linecap="round" fill="none"/>
   <path d="M434,72 Q445,82 456,72 L456,98 Q445,107 434,98 Z" fill="#3cbfbf"/>
   <path d="M438,98 Q430,120 426,140" stroke="#3cbfbf" stroke-width="6" stroke-linecap="round" fill="none"/>
   <path d="M452,98 Q458,118 462,140" stroke="#3cbfbf" stroke-width="6" stroke-linecap="round" fill="none"/>
-
-  <!-- Clip path for circle -->
   <defs>
     <clipPath id="circleClip">
       <circle cx="420" cy="102" r="88"/>
