@@ -3,237 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warren Fornah Jr. — Cybersecurity & IT</title>
+    <title>Warren Fornah Jr.</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@400;600;700&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sacramento&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="top-container">
-        <img class="top-cloud" src="images/cloud.png" alt="">
-        <h1>Warren Fornah Jr.</h1>
-        <h2>Cybersecurity &amp; IT Professional</h2>
-        <p class="hero-tagline">Seneca Polytechnic &nbsp;·&nbsp; GPA 4.0 / 4.0 &nbsp;·&nbsp; President's Honour List</p>
-        <img class="bottom-cloud" src="images/cloud.png" alt="">
-        <img src="images/mountain.png" alt="">
-    </div>
-
-    <div class="middle-container">
-
-        <!-- About -->
-        <div class="profile">
-            <div class="profile-row">
-                <img class="profile-img" src="images/warren.png" alt="Warren Fornah Jr.">
-                <h2>Hello, I'm Warren.</h2>
-                <p>I'm a Cybersecurity &amp; Threat Management student at Seneca Polytechnic (GPA 4.0 / 4.0, President's Honour List) and a BSc IT graduate from Limkokwing University (CGPA 3.8 / 4.0). With a background spanning cybersecurity, web development, cloud platforms, and e-learning administration, I bring both technical depth and real-world experience to every role. My goal: build technology that empowers people and organizations.</p>
+    <!-- Hero -->
+    <header class="hero">
+        <div class="hero-inner">
+            <img class="avatar" src="images/warren.png" alt="Warren Fornah Jr.">
+            <h1>Warren Fornah Jr.</h1>
+            <p class="hero-sub">Cybersecurity &amp; IT &nbsp;·&nbsp; Web Development &nbsp;·&nbsp; E-Learning</p>
+            <p class="hero-desc">BSc IT graduate &amp; Cybersecurity student at Seneca Polytechnic (GPA 4.0, President's Honour List). I build things for the web and help secure them.</p>
+            <div class="hero-tags">
+                <span>HTML / CSS</span>
+                <span>JavaScript</span>
+                <span>WordPress</span>
+                <span>SQL</span>
+                <span>Cybersecurity</span>
+                <span>Machine Learning</span>
+                <span>Canvas LMS</span>
             </div>
         </div>
-        <hr>
+    </header>
 
-        <!-- Skills -->
-        <div class="skills">
-            <h2>Skills.</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Cybersecurity</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Ethical Hacking</span>
-                        <span class="tag">Security Architecture</span>
-                        <span class="tag">IT Security Forensics</span>
-                        <span class="tag">Authentication &amp; Access Control</span>
-                        <span class="tag">Cloud Security (Azure/AWS)</span>
-                        <span class="tag">Data Analytics for Cybersecurity</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Development</h3>
-                    <div class="skill-tags">
-                        <span class="tag">HTML &amp; CSS</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">PHP</span>
-                        <span class="tag">SQL / MySQL</span>
-                        <span class="tag">WordPress CMS</span>
-                        <span class="tag">MS Access Automation</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Systems &amp; Tools</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Windows Server</span>
-                        <span class="tag">Linux / UNIX</span>
-                        <span class="tag">Cisco Packet Tracer</span>
-                        <span class="tag">Canvas / Moodle / BlackBoard LMS</span>
-                        <span class="tag">Microsoft 365</span>
-                        <span class="tag">Altair AI Studio</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-
-        <!-- Projects -->
-        <div class="projects">
-            <h2>Projects.</h2>
+    <!-- Projects -->
+    <main>
+        <section class="section">
+            <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
 
-                <div class="project-card featured">
-                    <span class="project-badge">Cybersecurity &amp; ML</span>
+                <div class="card featured">
+                    <div class="card-label">Cybersecurity &amp; ML</div>
                     <h3>Network Traffic Classification</h3>
-                    <p class="project-meta">Data Analytics for Cybersecurity &nbsp;·&nbsp; Seneca Polytechnic &nbsp;·&nbsp; 2026</p>
-                    <p>Applied machine learning to classify DDoS vs. benign network traffic on the CICIDS2017 dataset (225,745 flows, 79 features). Compared Logistic Regression and Random Forest — Random Forest achieved <strong>99.99% accuracy</strong> with zero false positives across 21,751 test samples.</p>
-                    <div class="skill-tags">
-                        <span class="tag">Machine Learning</span>
-                        <span class="tag">Altair AI Studio</span>
-                        <span class="tag">DDoS Detection</span>
-                        <span class="tag">Data Preprocessing</span>
-                        <span class="tag">Random Forest</span>
+                    <p>Built a machine learning pipeline to detect DDoS attacks on real network traffic (CICIDS2017 dataset — 225,745 flows). Compared Logistic Regression vs. Random Forest; Random Forest achieved <strong>99.99% accuracy</strong> with zero false positives.</p>
+                    <div class="card-tags">
+                        <span>Machine Learning</span>
+                        <span>DDoS Detection</span>
+                        <span>Altair AI Studio</span>
+                        <span>Data Analytics</span>
                     </div>
+                    <p class="card-meta">Seneca Polytechnic · 2026</p>
                 </div>
 
-                <div class="project-card">
-                    <span class="project-badge">Web Development</span>
-                    <img class="project-img" src="images/jaw-logo.png" alt="Joy at Work">
+                <div class="card">
+                    <div class="card-label">Web Development</div>
+                    <img class="card-logo" src="images/jaw-logo.png" alt="Joy at Work">
                     <h3>Joy-at-Work Website</h3>
-                    <p class="project-meta">joyatwork.net</p>
-                    <p>Designed and developed the full website for Joy-at-Work Center, a global training and coaching organization.</p>
-                    <div class="skill-tags">
-                        <span class="tag">WordPress</span>
-                        <span class="tag">HTML/CSS</span>
+                    <p>Designed and developed the website for Joy-at-Work Center, a global training and coaching organization.</p>
+                    <div class="card-tags">
+                        <span>WordPress</span>
+                        <span>HTML/CSS</span>
                     </div>
-                    <a class="btn btn-sm" href="https://joyatwork.net/" target="_blank">View Site</a>
+                    <a class="card-link" href="https://joyatwork.net/" target="_blank">Visit Site &rarr;</a>
                 </div>
 
-                <div class="project-card">
-                    <span class="project-badge">Web Development</span>
+                <div class="card">
+                    <div class="card-label">Web Development</div>
                     <h3>Empowering Through Love</h3>
-                    <p class="project-meta">empoweringthroughlove.org</p>
-                    <p>Built the website for CEVI &amp; Wonders Girls High School — institutions empowering vulnerable women through vocational training and formal secondary education in Sierra Leone.</p>
-                    <div class="skill-tags">
-                        <span class="tag">WordPress</span>
-                        <span class="tag">HTML/CSS</span>
-                        <span class="tag">Community Impact</span>
+                    <p>Built the website for CEVI &amp; Wonders Girls High School — institutions empowering vulnerable women through vocational training and secondary education in Sierra Leone.</p>
+                    <div class="card-tags">
+                        <span>WordPress</span>
+                        <span>HTML/CSS</span>
                     </div>
-                    <a class="btn btn-sm" href="https://empoweringthroughlove.org/" target="_blank">View Site</a>
+                    <a class="card-link" href="https://empoweringthroughlove.org/" target="_blank">Visit Site &rarr;</a>
                 </div>
 
-                <div class="project-card">
-                    <span class="project-badge">Web Development</span>
+                <div class="card">
+                    <div class="card-label">Web Development</div>
                     <h3>RecentDST Demo</h3>
-                    <p class="project-meta">GitHub Pages</p>
-                    <p>A front-end demo project showcasing interactive web development skills including responsive layout design and UI components.</p>
-                    <div class="skill-tags">
-                        <span class="tag">HTML/CSS</span>
-                        <span class="tag">JavaScript</span>
+                    <p>A front-end demo project showcasing responsive layout design and interactive UI components built with HTML, CSS, and JavaScript.</p>
+                    <div class="card-tags">
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
                     </div>
-                    <a class="btn btn-sm" href="https://warren4na.github.io/recentdst-demo/index.html" target="_blank">View Demo</a>
+                    <a class="card-link" href="https://warren4na.github.io/recentdst-demo/index.html" target="_blank">View Demo &rarr;</a>
                 </div>
 
             </div>
-        </div>
-        <hr>
-
-        <!-- Experience -->
-        <div class="experience">
-            <h2>Experience.</h2>
-            <div class="timeline">
-
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <h3>E-Learning Specialist (Team Lead)</h3>
-                        <span class="timeline-date">Sept 2021 – Present</span>
-                    </div>
-                    <p class="timeline-org">Orion Technical College</p>
-                    <p>Led a team administering Canvas LMS; provided technical support to faculty and students; managed digital learning resources and trained staff on e-learning platforms. Technologies: Canvas LMS, Cengage, Microsoft 365.</p>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <h3>Technology &amp; Community Engagement Specialist</h3>
-                        <span class="timeline-date">Sept 2020 – Present</span>
-                    </div>
-                    <p class="timeline-org">CEVI &amp; Wonders Girls High School</p>
-                    <p>Serve as the technology expert and website designer for institutions empowering vulnerable women through vocational training and secondary education in Sierra Leone.</p>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <h3>Sub-contractor — E-Learning &amp; Automation</h3>
-                        <span class="timeline-date">Dec 2020 – Present</span>
-                    </div>
-                    <p class="timeline-org">Serenity Projects Inc.</p>
-                    <p>Provided e-learning tutoring support, updated course documents, and developed automation programs in Microsoft Access and Excel to streamline course operations. Technologies: BlackBoard LMS, Microsoft Office.</p>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <h3>Special Projects Coordinator</h3>
-                        <span class="timeline-date">Oct 2020 – Jan 2022</span>
-                    </div>
-                    <p class="timeline-org">Joy-at-Work Center (JAWC)</p>
-                    <p>Part of the team that organized a successful Global Trainers virtual graduation ceremony. Technologies: Moodle LMS, Zoom Workplace.</p>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <h3>Web Development Intern</h3>
-                        <span class="timeline-date">Feb 2020 – Apr 2020</span>
-                    </div>
-                    <p class="timeline-org">Sensi Tech Hub</p>
-                    <p>Developed a personal fashion store website, a COVID-19 WebApp quiz, and participated in a WordPress training session.</p>
-                </div>
-
-            </div>
-        </div>
-        <hr>
-
-        <!-- Education -->
-        <div class="education">
-            <h2>Education.</h2>
-            <div class="timeline">
-
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <h3>Cybersecurity &amp; Threat Management Diploma</h3>
-                        <span class="timeline-date">Sept 2025 – Present</span>
-                    </div>
-                    <p class="timeline-org">Seneca Polytechnic, Toronto, ON</p>
-                    <p>GPA: 4.0 / 4.0 &nbsp;·&nbsp; President's Honour List (Winter 2026)<br>
-                    Courses: Information Security, Ethical Hacking, Security Architecture, IT Security Forensics, Authentication &amp; Access Control, Data Analytics for Cybersecurity, Security for Cloud.</p>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <h3>BSc (Hons) Information Technology</h3>
-                        <span class="timeline-date">2018 – 2025</span>
-                    </div>
-                    <p class="timeline-org">Limkokwing University of Creative Technology</p>
-                    <p>CGPA: 3.8 / 4.0<br>
-                    Courses: Data Structures &amp; Algorithms, Web Development, Database Administration (SQL), Networking (Cisco Packet Tracer), Programming Logic (C++).</p>
-                </div>
-
-            </div>
-        </div>
-        <hr>
+        </section>
 
         <!-- Contact -->
-        <div class="contact-me">
-            <h2>Get In Touch.</h2>
-            <h3>Open to co-op, internship &amp; full-time opportunities</h3>
-            <p>Whether it's cybersecurity, IT systems, web development, or anything in between — I'd love to connect.</p>
-            <a class="btn" href="mailto:wjrfornah@gmail.com">Contact Me</a>
+        <section class="section contact">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-desc">Open to co-op, internship &amp; full-time opportunities. Always happy to connect.</p>
+            <a class="btn" href="mailto:wjrfornah@gmail.com">Say Hello</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/warren-jr-fornah-875b461b9/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/warren4na" target="_blank">GitHub</a>
+            <a href="https://twitter.com/WarrenJrFornah" target="_blank">Twitter</a>
         </div>
-
-    </div>
-
-    <div class="bottom-container">
-        <a class="footer-link" href="https://www.linkedin.com/in/warren-jr-fornah-875b461b9/" target="_blank">LinkedIn</a>
-        <a class="footer-link" href="https://github.com/warren4na" target="_blank">GitHub</a>
-        <a class="footer-link" href="https://twitter.com/WarrenJrFornah" target="_blank">Twitter</a>
-        <p class="cp-text">© Warren Fornah Jr. 2026</p>
-    </div>
+        <p class="copyright">© Warren Fornah Jr. 2026</p>
+    </footer>
 
 </body>
 </html>
